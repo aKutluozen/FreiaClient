@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { InventoryPage } from '../inventory/inventory';
+import { ShoppingPage } from '../shopping/shopping';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +13,11 @@ export class HomePage {
 
   }
 
+  onGoToInventory() {
+    this.navCtrl.push(InventoryPage);
+  }
+
+  onGoToShopping() {
+    this.navCtrl.push(ShoppingPage);
+  }
 }

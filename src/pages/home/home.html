@@ -1,18 +1,56 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="logo" src="../../assets/logo.png">
+      </ion-col> 
+    </ion-row>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button icon-start block class="big-button" (click)="onGoToInventory()" color="addColor">
+          <ion-icon name="list-box" class="big-icon"></ion-icon>
+          <p>INVENTORY</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button icon-start block class="big-button" (click)="onGoToShopping()"  color="removeColor">
+          <ion-icon name="cart" class="big-icon"></ion-icon>
+          <p>SHOPPING</p>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button icon-start block class="big-button" (click)="onGoToShopping()"  color="shoppingColor">
+          <ion-icon name="paper" class="big-icon"></ion-icon>
+          <p>RECIPES</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button icon-start block class="big-button" color="accountsColor">
+          <ion-icon name="contacts" class="big-icon"></ion-icon>
+          <p>USERS</p>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button icon-start block class="big-button" color="inventoryColor">
+          <ion-icon name="settings" class="big-icon"></ion-icon>
+          <p>SETTINGS</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+          <button ion-button icon-start block class="big-button" color="settingsColor">
+            <ion-icon name="microphone" class="big-icon"></ion-icon>
+            <p>TALK TO ME NIGGA</p>
+          </button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
 </ion-content>

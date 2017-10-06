@@ -7,6 +7,9 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { InventoryPage } from '../pages/inventory/inventory';
 import { ShoppingPage } from '../pages/shopping/shopping';
+import { CategoryPage } from '../pages/category/category';
+import { CreateItemPage } from '../pages/create-item/create-item';
+import {ViewItemsPage} from '../pages/view-items/view-items';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +20,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     InventoryPage,
-    ShoppingPage
+    ShoppingPage,
+    CreateItemPage,
+    CategoryPage,
+    ViewItemsPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     InventoryPage,
-    ShoppingPage
+    ShoppingPage,
+    CreateItemPage,
+    CategoryPage,
+    ViewItemsPage
+
   ],
   providers: [
     StatusBar,

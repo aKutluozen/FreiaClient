@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CreateItemPage } from '../create-item/create-item';
 
 /**
  * Generated class for the InventoryPage page.
@@ -23,6 +24,10 @@ export class InventoryPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InventoryPage');
+  }
+
+  onAddItemPage() {
+    this.navCtrl.push(CreateItemPage);
   }
 
 }

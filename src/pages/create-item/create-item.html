@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create a New Item</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Category</ion-label>
+      <ion-select [(ngModel)]="category">
+        <ion-option value="fruits">Fruits</ion-option>
+        <ion-option value="vegetables">Vegetables</ion-option>
+        <ion-option value="oils">Oils</ion-option>
+        <ion-option value="grains">Grains</ion-option>
+        <ion-option value="proteins">Proteins</ion-option>
+        <ion-option value="dairy">Dairy</ion-option>    
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Item Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Pepperoni</ion-label>
+        <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+      </ion-item>
+
+  </ion-list>
+</ion-content>

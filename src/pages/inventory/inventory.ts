@@ -23,7 +23,7 @@ export class InventoryPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InventoryPage');
+    console.log('ionViewDidLoad InventoryPage 123');
   }
 
   onAddItemPage() {

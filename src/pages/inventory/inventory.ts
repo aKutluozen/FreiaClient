@@ -15,8 +15,8 @@ import { CreateItemPage } from '../create-item/create-item';
   templateUrl: 'inventory.html',
 })
 export class InventoryPage {
-  items: any = [
-    "ali", "veli", "adil", "veli", "adil", "veli", "adil", "veli", "adil", "veli", "adil"
+  categories: any = [
+    "Protein", "Dairy", "Vegetables", "Fruits", "Oils", "Grains", "Carbonhydrates"
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -29,5 +29,4 @@ export class InventoryPage {
   onAddItemPage() {
     this.navCtrl.push(CreateItemPage);
   }
-
 }

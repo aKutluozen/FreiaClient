@@ -1,43 +1,11 @@
-<ion-header>
-    <ion-navbar>
-      <ion-grid>
-        <ion-row>
-          <ion-col col-9>
-            <ion-title>Inventory</ion-title>
-          </ion-col>
-          <ion-col col-3><img class="small-logo" src="../../assets/logo.png"></ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-navbar>
-  </ion-header>
-
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
-      </ion-searchbar>
-    </ion-row>
-    <ion-row>
-      <ion-col col-6>
-        <button ion-button icon-start block class="big-button" color="addColor" (click)="onAddItemPage()">
-          <ion-icon name="add-circle" class="big-icon"></ion-icon>
-          <p>ADD</p>
-        </button>
-      </ion-col>
-      <ion-col col-6>
-        <button ion-button icon-start block class="big-button" color="removeColor">
-          <ion-icon name="remove-circle" class="big-icon"></ion-icon>
-          <p>REMOVE</p>
-        </button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
       <ion-col>
         <ion-list>
-          <ion-item *ngFor="let item of items">
+          <ion-item *ngFor="let category of categories">
             <ion-icon name="cart" item-start></ion-icon>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
+            <h2>{{ category }}</h2>
             <button ion-button clear item-end>View</button>
           </ion-item>
         </ion-list>

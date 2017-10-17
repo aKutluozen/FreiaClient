@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {InventoryPage } from '../inventory/inventory';   //This page would show list of categories.....then it will fetch contents 
+import { InventoryPage } from '../inventory/inventory';   //This page would show list of categories.....then it will fetch contents 
+import { CreateItemPage } from '../create-item/create-item';
 //from the API for that category. 
 
 import {ViewItemsPage} from '../view-items/view-items';
-/**
- * Generated class for the CategoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
